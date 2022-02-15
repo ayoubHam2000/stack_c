@@ -6,15 +6,20 @@
 #    By: aben-ham <aben-ham@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/14 18:50:42 by aben-ham          #+#    #+#              #
-#    Updated: 2022/02/14 18:51:22 by aben-ham         ###   ########.fr        #
+#    Updated: 2022/02/15 15:58:24 by aben-ham         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FILES = \
+		s_clear.c \
+		s_clone.c \
+		s_init.c \
+		s_pop.c \
+		s_push.c \
 		main.c
 
-
-CFLAGS =  -g -Wall -Wextra -Werror -I .
+#-Wall -Wextra -Werror
+CFLAGS = -g -Wall -Wextra -Werror -I .
 DEPFLAGS = -MMD -MF $(@:.o=.d)
 
 NAME = stack
